@@ -9,7 +9,7 @@ const { connector } = require("swagger-routes-express"),
   express = require("express");
 // Our Modules
 const apiControllers = require("./api/controllers"),
-  apiDocs = "./api/docs/openapi.yaml";
+  apiDocs = "api/docs/openapi.yaml";
 
 // ~~~~~~~~~~~~~ Server ~~~~~~~~~~~~ //
 

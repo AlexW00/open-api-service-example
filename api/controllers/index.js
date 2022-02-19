@@ -1,3 +1,5 @@
+// module to bundle the exports of all controllers
+
 const glob = require("glob");
 
 // iterate over all modules in the ./src directory

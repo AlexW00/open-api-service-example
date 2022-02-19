@@ -1,0 +1,143 @@
+<html><head><meta charset="UTF-8"><title>API Docs Title v1.0.0</title><script src="https://mermade.github.io/static/respec-widdershins.js" class="remove"></script><script class="remove">var respecConfig = {"specStatus":"base","editors":[{"name":"Your Name","url":"http://your-site.com"}],"processVersion":2017,"edDraftURI":"http://some.github.repo","shortName":"dahut","noTOC":false,"additionalCopyrightHolders":"Copyright the Authors"};</script></head><body><section id="abstract"><p>Your abstract goes here</p>
+</section><section id="sotd"></section><!-- Generator: Widdershins v4.0.1 -->
+<section>
+<h1 id="api-docs-title">API Docs Title v1.0.0</h1>
+<blockquote>
+<p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
+</blockquote>
+<p>Your API Description here</p>
+<p>Base URLs:</p>
+<ul>
+<li><a href="/api">/api</a></li>
+</ul>
+</section>
+<section>
+<h1 id="api-docs-title-user">User</h1>
+<section>
+<h2>getAllUsers</h2>
+<p><a id="opIdgetAllUsers"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="nohighlight example"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">'Accept'</span>:<span class="hljs-string">'application/json'</span>
+};
+
+fetch(<span class="hljs-string">'/api/users'</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">'GET'</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<p><code>GET /users</code></p>
+<p><em>Returns a list of users.</em></p>
+<p>Optional extended description in CommonMark or HTML</p>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="nohighlight example"><code>{
+  <span class="hljs-attr">"username"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"email"</span>: <span class="hljs-string">"user@example.com"</span>
+}
+</code></pre>
+<section>
+<h3 id="getallusers-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>A JSON array of user names</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>default</td>
+<td>Default</td>
+<td>An unexpected error was encountered</td>
+<td>Inline</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getallusers-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» username</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» email</td>
+<td>string(email)</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>Status Code <strong>default</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» message</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» code</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+</section>
+<aside class="success">
+This operation does not require authentication
+</aside>
+</section>
+</section>
+<link rel="stylesheet" href="../config/respecStyle.css">

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build-mkdocs": "node ./scripts/build-mkdocs.js"
+    "dev": "nodemon index.js",
+    "build-docs": "sh ./scripts/build-docs.sh",
+    "build-docs-md": "sh ./scripts/build-docs-md.sh"
   },
   "author": "",
   "license": "ISC",

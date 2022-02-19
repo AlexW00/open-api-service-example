@@ -1,0 +1,17 @@
+{
+  "name": "openapi-service-example",
+  "version": "1.0.0",
+  "description": "An example of a REST service defined via OpenAPI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "glob": "^7.2.0",
+    "swagger-parser": "^10.0.3",
+    "swagger-routes-express": "^3.3.1"
+  }
+}

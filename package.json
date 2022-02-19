@@ -6,14 +6,18 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "fetch-schemes": "node ./scripts/fetch-schemes.js",
     "build-docs-html": "sh ./scripts/build-docs-html.sh",
-    "build-docs-md": "sh ./scripts/build-docs-md.sh"
+    "build-docs-md": "sh ./scripts/build-docs-md.sh",
+    "build-docs": "npm run build-docs-html && npm run build-docs-md",
+    "build": "npm run fetch-schemes && npm run build-docs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
     "glob": "^7.2.0",
+    "shelljs": "^0.8.5",
     "swagger-parser": "^10.0.3",
     "swagger-routes-express": "^3.3.1",
     "widdershins": "^4.0.1",

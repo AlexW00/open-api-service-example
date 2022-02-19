@@ -1,9 +1,6 @@
 type: object
 properties:
-  username:
+  message:
     type: string
-  email:
+  code:
     type: string
-    format: email
-required:
-  - email

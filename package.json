@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build-docs": "sh ./scripts/build-docs-html.sh",
+    "build-docs-html": "sh ./scripts/build-docs-html.sh",
     "build-docs-md": "sh ./scripts/build-docs-md.sh"
   },
   "author": "",
